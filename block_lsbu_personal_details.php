@@ -60,7 +60,8 @@ class block_lsbu_personal_details extends block_base {
         
         if($this->isStudent($USER->username)==true) {
             // course enrolments
-    
+            // todo: not sure what goes here ...
+            
             // custom links
             $content .= html_writer::start_tag('p');
             $content .= html_writer::link('https://my.lsbu.ac.uk/page/faculty-offices-ahs', get_string('faculty-offices-ahs', 'block_lsbu_personal_details'),array('class' => 'external_link'));
