@@ -103,7 +103,7 @@ class block_lsbu_personal_details extends block_base {
         {
             if(!empty($role->role))
             {
-                if($role->role=='strudent') {
+                if($role->role=='student') {
                     return true;
                 }
             }
