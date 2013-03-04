@@ -93,7 +93,7 @@ class block_lsbu_personal_details extends block_base {
         global $DB;
         
         // TODO get database name from db extended config plugins setting
-        $sql="SELECT role FROM mis_lsbu.moodle_users where username='$username'";
+        $sql="SELECT url FROM {user} where username='$username'";
         
         $roles = array();
         
@@ -103,7 +103,9 @@ class block_lsbu_personal_details extends block_base {
         {
             if(!empty($role->role))
             {
-                return true;    
+                if($role->role=='strudent') {
+                    return true;
+                }
             }
         }
         
