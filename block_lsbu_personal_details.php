@@ -93,7 +93,7 @@ class block_lsbu_personal_details extends block_base {
         global $DB;
         
         // TODO get database name from db extended config plugins setting
-        $sql="SELECT url FROM {user} where username='$username'";
+        $sql="SELECT url as role FROM {user} where username='$username'";
         
         $roles = array();
         
